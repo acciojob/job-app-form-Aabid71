@@ -10,15 +10,15 @@
 	<!-- the entire body must be written by student -->
 	<form method="post" action="backend.php">
 		<label for="name">Name</label>
-<input type="text" name="name" id="name">
+<input type="text" name="name" id="name" required >
 
 <br>
 <br>
 <label for="email">Email</label>
-<input type="email" name="email" id="email">
+<input type="email" name="email" id="email" required >
 <br><br>
 <label for="gender">Male</label>
-<input type="radio" name="gender" id="gender">Femal:<input type="radio" name="gender" id="gender"> </input>
+<input type="radio" name="gender" id="gender">Femal:<input type="radio" name="gender" id="gender"> </input required>
 <br><br>
  Laptop Brands:<select name="laptop" id="laptop"> 
 	 <option value="laptop">Asus</option>
@@ -26,13 +26,15 @@
 	 <option value="laptop">HP</option>
 </select>
 <br><br>
-Age:<input type="number" name="age" id="age">
+<label for="age">Age</label>
+<input type="number" name="age" id="age" required>
 <br><br>
- DOB<input type="date" name="dob" id="dob">
+<label for="dob">DOB</label>
+ <input type="date" name="dob" id="dob" required>
  <br><br>
- Password:<input type="password" name="my" id="my">
+ Password:<input type="password" name="my" id="my" required>
  <br><br>
- Portfolio URL:<input type="url" name="url" id="url">
+ Portfolio URL:<input type="url" name="url" id="url" required>
  <br><br>
  <input type="submit" value="Submit">
 	</form>
